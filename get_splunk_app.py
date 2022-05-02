@@ -137,7 +137,7 @@ def run_module():
         app_id = re.search("https:\/\/splunkbase\.splunk\.com\/app\/([0-9]+)",app_id).group(1)
 
     # get app info
-    app_info_request = requests.get(f"{splunkbase_url}/api/v1/app/{app_id}/?include=all")
+    app_info_request = requests.get(f"{splunkbase_url}/api/v1/app/{app_id}/?include=releases")
     if app_info_request.status_code != 200:
         module.fail_json(msg='Could not find an app with supplied id', **result)
     app_info = app_info_request.json()

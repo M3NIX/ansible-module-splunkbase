@@ -1,4 +1,4 @@
-# ansible-module-lunkbase
+# ansible-module-splunkbase
 
 This ansible module will download an app from https://splunkbase.splunk.com.
 If you want to have a look into a ansible role which will download and install apps you can have a look [here](https://github.com/M3NIX/ansible-role-splunkbase.git).
